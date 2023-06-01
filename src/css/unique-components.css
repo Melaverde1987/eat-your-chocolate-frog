@@ -123,6 +123,12 @@ transform: rotateY(180deg);
   border: 1px solid var(--orange);
   border-radius: 35px;
 }
+.unique-overlay-btn {
+  background-color: var(--white);
+}
+.unique-item-btn:first-child .unique-overlay-btn {
+  background-color: var(--orange);
+}
 
 .unique-overlay-text {
   font-size: 14px;
@@ -165,12 +171,13 @@ transform: rotateY(180deg);
     align-items: center;
     gap: 19px;
   }
-
   .unique-item {
     width: 270px;
   }
-
   .unique-img {
     margin-bottom: 36px;
+  }
+  .unique-overlay {
+    padding: 20px;
   }
 }
