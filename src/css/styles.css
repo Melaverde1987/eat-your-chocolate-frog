@@ -22,9 +22,12 @@
   COLORS 
   ================
   */
-  --white: #fafafa;
-  --black: #111111;
+  --white: #ffffff;
+  --black: #000000;
+
   --dark-violet: #1e1823;
+  --light-white: #fafafa;
+  --light-black: #111111;
   --orange: #fd9222;
   --light-orange: #fcf1e0;
 
@@ -39,7 +42,7 @@
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
-  color: var(--black);
+  color: var(--light-black);
   background-color: var(--white);
 
   font-synthesis: none;
@@ -47,4 +50,56 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.btn-priimary {
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+}
+
+.btn-priimary:hover {
+  background-color: var(--light-orange);
+  color: var(--orange);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  border: 1px solid var(--orange);
+  color: var(--orange);
+}
+
+.btn-tertiary {
+  background-color: transparent;
+  border: 1px solid var(--orange);
+  color: var(--light-black);
+}
+
+.btn-tertiary:hover {
+  background-color: var(--orange);
+  color: var(--white);
 }

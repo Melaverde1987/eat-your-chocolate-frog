@@ -1,1 +1,4 @@
-import './js/modal';
+import './js/modal-order';
+import './js/modal-review';
+import './js/modal-subscribe';
+import './js/mobile-menu';
