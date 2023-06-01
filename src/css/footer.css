@@ -26,12 +26,16 @@
   justify-content: space-between;
 }
 .footer-contacts {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
 }
 .footer-contacts-info {
   margin-bottom: 14px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.29;
+  /* font-size: 14px;
+  line-height: 1.29; */
 }
 .footer-contacts-list {
   display: flex;
@@ -40,9 +44,6 @@
   /* align-items: center; */
 }
 .footer-contacts-item {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
 }
 .footer-socials-box {
 }
