@@ -39,7 +39,7 @@
   --font-primary: Montserrat, sans-serif;
 
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2;
   font-weight: 400;
   color: var(--light-black);
@@ -50,6 +50,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--light-black);
 }
 
 .container {
@@ -71,13 +79,13 @@
   }
 }
 
-.btn-priimary {
+.btn-primary {
   background: var(--orange);
   color: var(--white);
   border: none;
 }
 
-.btn-priimary:hover {
+.btn-primary:hover {
   background-color: var(--light-orange);
   color: var(--orange);
 }
