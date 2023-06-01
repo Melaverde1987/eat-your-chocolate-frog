@@ -56,6 +56,10 @@
 .footer-socials-icons {
   fill: var(--white);
 }
+.footer-socials-icons:hover,
+.footer-socials-icons:active {
+  fill: var(--orange);
+}
 .footer-line {
   border: 1px solid rgba(255, 255, 255, 0.1);
   transform: rotate(180deg);
@@ -67,5 +71,9 @@
   flex-direction: column;
   gap: 14px;
 }
-.footer-menu-item {
+.footer-menu-item:hover,
+.footer-menu-item:active,
+.footer-contacts-item:hover,
+.footer-contacts-item:active {
+  color: var(--orange);
 }
