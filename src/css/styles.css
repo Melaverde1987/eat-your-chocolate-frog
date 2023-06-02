@@ -16,6 +16,9 @@
 @import url('./subscribe.css');
 @import url('./footer.css');
 
+@import url('./modal-review.css');
+@import url('./modal-explore.css');
+
 :root {
   /* 
   ================
@@ -38,8 +41,16 @@
   */
   --font-primary: Montserrat, sans-serif;
 
+  /*
+  ===========
+  OTHER
+  ===========
+  */
+
+  --cubic-transition: cubic-bezier(0.4, 0, 0.2, 1);
+
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2;
   font-weight: 400;
   color: var(--light-black);
@@ -50,6 +61,27 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--light-black);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -71,13 +103,13 @@
   }
 }
 
-.btn-priimary {
+.btn-primary {
   background: var(--orange);
   color: var(--white);
   border: none;
 }
 
-.btn-priimary:hover {
+.btn-primary:hover {
   background-color: var(--light-orange);
   color: var(--orange);
 }
