@@ -73,6 +73,7 @@
 }
 @media only screen and (min-width: 1200px) {
   .footer-all-contacts {
+    max-width: 293px;
     gap: 63px;
   }
 }
@@ -133,7 +134,7 @@
 .footer-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 18px;
 }
 @media only screen and (min-width: 768px) {
   .footer-menu-list {
