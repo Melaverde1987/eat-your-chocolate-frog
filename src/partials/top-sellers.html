@@ -1,3 +1,162 @@
 <section class="top-sellers">
-  <div class="container">Top Sellers</div>
+  <div class="container top-seller-main">
+    <h2 class="top-text">
+      <span class="top-text-second">Top &nbsp;</span>Sellers
+    </h2>
+    <ul class="top-sellers-items">
+      <li class="top-sellers-list">
+        <img
+          class="top-sellers-img"
+          src="/img/top-sellers/desc_coffee.jpg"
+          srcset="
+            ./img/top-sellers/desc_coffee@1x.jpg 1x,
+            ./img/top-sellers/desc_coffee@2x.jpg 2x
+          "
+          alt="Coffee chokolate"
+          width="368"
+          height="464"
+        />
+        <p class="top-sellers-title">
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
+      </li>
+      <li class="top-sellers-list">
+        <img
+          class="top-sellers-img"
+          src="/img/top-sellers/desc_chokolate.jpg"
+          srcset="
+            ./img/top-sellers/desc_chokolate@1x.jpg 1x,
+            ./img/top-sellers/desc_chokolate@2x.jpg 2x
+          "
+          alt="Chokolate"
+          width="368"
+          height="464"
+        />
+      </li>
+      <li class="top-sellers-list">
+        <img
+          class="top-sellers-img top-mob-img"
+          src="/img/top-sellers/desc_morechoko.jpg"
+          srcset="
+            ./img/top-sellers/desc_morechoko@1x.jpg 1x,
+            ./img/top-sellers/desc_morechoko@2x.jpg 2x
+          "
+          alt="More chokolate"
+          width="368"
+          height="464"
+        />
+      </li>
+    </ul>
+    <button class="top-button" data-modal-open type="button">Buy now</button>
+  </div>
+  <div class="top-backdrop container">
+    <div class="top-seller-modal"></div>
+    <button class="top-modal-button" data-modal-close type="button">
+      <svg class="top-modal-icon" width="7" height="7">
+        <use href="./img/sprite.svg/#close"></use>
+      </svg>
+    </button>
+    <!-- Form modal -->
+    <form class="top-seller-form">
+      <h2 class="top-text">Buy Now</h2>
+      <ul class="top-sellers-form-list">
+        <li class="top-sellers-form-item">
+          <img
+            class="top-sellers-form-img"
+            src="../img/top-sellers/modal/desc_tab_choko.png"
+            alt="Chokolate"
+            width="120"
+            height="107"
+          />
+        </li>
+        <li class="top-sellers-form-item">
+          <img
+            class="top-sellers-form-img"
+            src="../img/top-sellers/modal/desc_tab_wbchoko.png"
+            alt="White and black chokolate"
+            width="120"
+            height="111"
+          />
+        </li>
+        <li class="top-sellers-form-item">
+          <img
+            class="top-sellers-form-img"
+            src="../img/top-sellers/modal/desc_tab_chokolate.png"
+            alt="White and black chokolate"
+            width="120"
+            height="107"
+          />
+        </li>
+      </ul>
+      <label class="top-modal">
+        <span class="top-seller-info">Personal information</span>
+        <input
+          class="top-sellers-input"
+          type="text"
+          name="user name"
+          pattern="^[a-zA-Z]+$"
+          minlength="2"
+          placeholder="Name"
+        />
+      </label>
+      <input
+        class="top-sellers-input"
+        type="text"
+        name="user surname"
+        pattern="^[a-zA-Z]+$"
+        minlength="2"
+        placeholder="Surname"
+      />
+      <label class="top-modal">
+        <span class="top-seller-info">Email</span>
+        <input
+          class="top-sellers-input"
+          type="email"
+          name="user-email"
+          id="email"
+          placeholder="Enter your email"
+        />
+      </label>
+      <label class="top-modal">
+        <span class="top-seller-info">Phone number</span>
+        <span class="top-seller-number">+380</span>
+        <input
+          class="top-sellers-input"
+          type="tel"
+          name="user-phone"
+          id="tel"
+          placeholder="Phone number"
+          pattern="[0-9]{14,23}"
+        />
+        <svg class="top-seller-modal" width="30.17" height="18.41">
+          <use href="./img/sprite.svg/#icon-Ukraine"></use>
+        </svg>
+      </label>
+      <label class="top-modal">
+        <span class="top-seller-info">Card number</span>
+        <input
+          class="top-sellers-input"
+          type="number"
+          name="Cardnumber"
+          id="Card-number"
+          placeholder="Enter card"
+          pattern="[0-9]{14,23}"
+        />
+        <svg class="top-seller-modal" width="30.17" height="18.41">
+          <use href="./img/sprite.svg/#icon-Mastercard"></use>
+        </svg>
+      </label>
+      <label class="top-modal">
+        <span class="top-seller-info">Comment</span>
+        <textarea
+          class="top-seller-textarea"
+          name="Comment"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+      <button class="top-seller" type="button">Submit</button>
+    </form>
+  </div>
 </section>

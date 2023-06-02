@@ -1,3 +1,117 @@
 .top-sellers {
   padding: 20px 0;
 }
+.container {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 320px) {
+  .top-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--light-black);
+    margin-bottom: 32px;
+  }
+
+  .top-text-second {
+    color: var(--orange);
+  }
+
+  .top-sellers-img {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .top-sellers-title {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: var(--light-black);
+    width: 306px;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    padding-left: 20px;
+    padding-right: 49px;
+  }
+
+  .top-button {
+    display: block;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 17px;
+    min-width: 120px;
+    height: 41px;
+    background: var(--orange);
+    border-radius: 100px;
+    border: none;
+    color: var(--white);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .top-mob-img {
+    display: none;
+  }
+}
+.top-sellers {
+}
+.container {
+}
+.top-seller-main {
+}
+.top-text {
+}
+.top-text-second {
+}
+.top-sellers-items {
+}
+.top-sellers-list {
+}
+.top-sellers-img {
+}
+.top-sellers-title {
+}
+.top-button {
+}
+.top-backdrop {
+}
+.top-seller-modal {
+}
+.top-modal-button {
+}
+.top-modal-icon {
+}
+
+/* Form modal */
+
+.top-seller-form {
+}
+.top-sellers-form-list {
+}
+.top-sellers-form-item {
+}
+.top-sellers-form-img {
+}
+.top-modal {
+}
+.top-seller-info {
+}
+.top-sellers-input {
+}
+.top-seller-number {
+}
+.top-seller-textarea {
+}
+.top-seller {
+}
