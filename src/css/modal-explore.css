@@ -90,6 +90,9 @@
 
   background-color: transparent;
   fill: var(--white);
+
+  transition: background-color 250ms var(--cubic-transition),
+  color 250ms var(--cubic-transition);
 }
 
 .modal-explore-btn-close:hover,
@@ -119,12 +122,15 @@
 line-height: 1.12;
 letter-spacing: -0.02em;
 
-color: rgba(64, 64, 64, 0.3);
+color: var(--light-black);
 
 border: 1.5px solid rgba(17, 17, 17, 0.05);
 border-radius: 25px;
 
+}
 
+.explore_user_email::placeholder{ 
+color: rgba(64, 64, 64, 0.3);
 }
 
 .explore_user_email:focus {
@@ -145,6 +151,9 @@ min-width: 100px;
   font-weight: 600;
 
 line-height: 1.2;
+
+transition: background-color 250ms var(--cubic-transition),
+  color 250ms var(--cubic-transition);
 }
 
 .modal-explore-btn:focus {
