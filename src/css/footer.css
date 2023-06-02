@@ -66,14 +66,14 @@
   .footer-all-contacts {
     max-width: 280px;
     display: flex;
-    gap: 52px;
+    gap: 50px;
     justify-content: space-between;
     flex-direction: row;
   }
 }
 @media only screen and (min-width: 1200px) {
   .footer-all-contacts {
-    gap: 65px;
+    gap: 63px;
   }
 }
 .footer-contacts {
