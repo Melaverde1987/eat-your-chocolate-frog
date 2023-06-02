@@ -6,6 +6,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 @media screen and (min-width: 320px) {
   .top-text {
     font-family: 'Montserrat';
@@ -24,11 +25,6 @@
     color: var(--orange);
   }
 
-  .top-sellers-img {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .top-sellers-title {
     font-family: 'Montserrat';
     font-size: 14px;
@@ -38,15 +34,13 @@
     width: 306px;
     margin-top: 20px;
     margin-bottom: 32px;
-    padding-left: 20px;
-    padding-right: 49px;
   }
 
   .top-button {
     display: block;
     font-family: 'Montserrat';
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     min-width: 120px;
     height: 41px;
     background: var(--orange);
@@ -56,6 +50,24 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 72px;
+  }
+  .top-sellers-items {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-wripper-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-wripper-tablet {
+    display: none;
   }
 }
 
@@ -91,6 +103,39 @@
 .top-modal-button {
 }
 .top-modal-icon {
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .top-text {
+    font-size: 24px;
+    line-height: 1.16px;
+    margin-bottom: 50px;
+  }
+
+  .top-button {
+    font-size: 18px;
+    line-height: 1.22;
+    min-width: 162px;
+    height: 50px;
+    margin-top: 32px;
+    margin: 32px 0 0 0;
+  }
+
+  .top-sellers-items {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .top-sellers-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+
+@media and (min-width: 1200px) {
 }
 
 /* Form modal */
