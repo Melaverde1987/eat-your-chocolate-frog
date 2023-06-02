@@ -95,6 +95,9 @@
   align-items: center;
 
   background-color: transparent;
+
+  transition: background-color 250ms var(--cubic-transition),
+  color 250ms var(--cubic-transition);
 }
 
 .modal-btn-close:hover,
@@ -218,6 +221,9 @@ background-color: var(--light-orange);
   min-width: 35px;
 
   outline: none;
+
+  transition: background-color 250ms var(--cubic-transition),
+  color 250ms var(--cubic-transition);
 }
 
 .modal-review-btn:focus{
