@@ -46,9 +46,17 @@
   }
 }
 .footer-title {
-  width: 300px;
+  max-width: 300px;
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-title {
+    font-size: 28px;
+    line-height: 1.21;
+  }
 }
 .footer-title-accent {
   color: var(--orange);
@@ -62,10 +70,14 @@
   .footer-all-contacts {
     max-width: 280px;
     display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
+    gap: 52px;
     justify-content: space-between;
     flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer-all-contacts {
+    gap: 65px;
   }
 }
 .footer-contacts {
