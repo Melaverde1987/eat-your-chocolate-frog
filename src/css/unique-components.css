@@ -34,9 +34,10 @@
 .unique-item {
   position: relative;
   width: 335px;
-  border: 1px solid var(--white);
-  border-radius: 15px;
+  /* border: 1px solid var(--white);
+  border-radius: 15px; */
   perspective: 1000px; 
+  overflow: hidden;
 }
 .unique-card-wrapper {
   top: 0;
@@ -57,11 +58,11 @@ transform: rotateY(180deg);
 .unique-item:hover .unique-overlay {
   transform: rotateY(360deg);
   }
-.unique-item:first-child {
+.unique-item:first-child .unique-card-wrapper {
   background-color: var(--orange);
 }
 
-.unique-item:nth-child(3) {
+.unique-item:nth-child(3) .unique-card-wrapper {
   background-color: var(--dark-violet);
 }
 
@@ -119,16 +120,22 @@ transform: rotateY(180deg);
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
+  color: var(--white);
   margin-bottom: 14px;
+  background-color: var(--orange);
   border: 1px solid var(--orange);
   border-radius: 35px;
 }
-.unique-overlay-btn {
+.unique-overlay-btn:hover {
+background-color: var(--white);
+color: var(--light-black);
+}
+/* .unique-overlay-btn {
   background-color: var(--white);
-}
-.unique-item-btn:first-child .unique-overlay-btn {
+} */
+/* .unique-item-btn:first-child .unique-overlay-btn {
   background-color: var(--orange);
-}
+} */
 
 .unique-overlay-text {
   font-size: 14px;
