@@ -1,100 +1,103 @@
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-  
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  
-  .backdrop-explore {
-    position: fixed;
-    top: 0;
-    left: 0;
-  
-    background-color: rgba(69, 64, 73, 0.3);
-    backdrop-filter: blur(1px);
-    width: 100%;
-    height: 100%;
-  }
-  
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-  
-  .modal-explore {
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-    padding: 201px 24px 32px 24px;
-  
-    border-radius: 15px;
-    width: 311px;
-    max-width: calc(100% - 12px);
-  
-      
-    background-color: var(--light-white);
-  }
+.backdrop-explore {
+  position: fixed;
+  top: 0;
+  left: 0;
 
-  /* .modal-explore-overlay{
+  background-color: rgba(69, 64, 73, 0.3);
+  backdrop-filter: blur(1px);
+  width: 100%;
+  height: 100%;
+}
 
-  } */
-  
-  .modal-explore-title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: var(--light-black);
-  
-    width: 263px;
-    max-width: 100%;
-  }
-  
-  .modal-title-part-one {
-    display: block;
-  }
- 
-  .modal-explore-title-color {
-    color: var(--orange);
-  }
-  
-  .modal-btn-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-  
-    width: 24px;
-    height: 24px;
-  
-    padding: 0;
-    border: none;
-  
-    margin: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    background-color: transparent;
-  }
-  
-  .modal-btn-close:hover,
-  .modal-btn-close:focus {
-    outline: none;
+.modal-explore {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 201px 24px 32px 24px;
+
+  border-radius: 15px;
+  width: 311px;
+  max-width: calc(100% - 12px);
+
+  background-color: var(--light-white);
+  overflow: hidden;
+}
+
+.modal-explore-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 169px;
+
+  background-color: rgba(137, 197, 174, 0.5);
+  background-image: url(../img/modal-explore/mod-exp_mob.jpg);
+}
+
+.modal-explore-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--light-black);
+
+  width: 263px;
+  max-width: 100%;
+}
+
+.modal-explore-title-part-two{
+ display: block;   
+}
+
+.modal-explore-title-color {
+  color: var(--orange);
+}
+
+.modal-explore-btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 24px;
+  height: 24px;
+
+  padding: 0;
+  border: none;
+
+  margin: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  fill: var(--white);
+}
+
+.modal-explore-btn-close:hover,
+.modal-explore-btn-close:focus {
+  outline: none;
   fill: var(--orange);
   background-color: var(--light-orange);
-  
-  
-  }
-  
-  /* .modal-btn-close{
+}
+
+/* .modal-btn-close{
       position: absolute;
       top: 0;
       right: 0;
@@ -109,103 +112,100 @@
   
   
   } */
-  
-  .modal-btn-icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .modal-explore-form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 32px;
-    gap: 14px;
-  }
-  .user {
-    width: 100%;
-    padding: 14px 18px;
-  
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-    border-radius: 13px;
-    align-self: stretch;
-  }
-  
-  .user:focus {
-    outline: 1px solid var(--orange);
-  }
-  
-  .modal-btn-icon .user::placeholder {
-    font-size: 13px;
-    line-height: 1.21;
-  
-    align-items: center;
-    letter-spacing: -0.02em;
-  
-    color: rgba(64, 64, 64, 0.3);
-  }
-  
-  .modal-tel-wrap {
-    position: relative;
-  }
-  .modal-explore-tel-icon {
-    position: absolute;
-    display: block;
-    z-index: 1;
-    width: 24px;
-    height: 24px;
-    top: 50%;
-    left: 18px;
-    transform: translatey(-50%);
-    cursor: text;
-    pointer-events: none;
-    
-  }
-  
-  
-  .modal-explore-tel-code {
-    position: absolute;
-    z-index: 1;
-    display: inline-block;
-    top: 50%;
-    left: 50px;
-    transform: translatey(-50%);
-  
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: -0.02em;
-  
-    pointer-events: none;
-  }
-  
-  .modal-tel-icon::after {
-    position: absolute;
-    content: '';
-    display: inline-block;
-    margin-left: 20px;
-    width: 1.5px;
-    height: 100%;
-    background-color: rgba(17, 17, 17, 0.05);
-  }
-  
-  .user-tel {
-    padding-left: 106px;
-    
-  }
-  
-  .user_comment {
-    height: 91px;
-    resize: none;
-  }
-  .modal-explore-btn {
-    padding: 12px 28px;
-    margin-top: 18px;
-  
-    outline: none;
-  }
-  
-  .modal-explore-btn:focus{
-    background-color: var(--light-orange);
-    color: var(--orange);
-  }
+
+.modal-btn-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.modal-explore-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  gap: 14px;
+}
+.user {
+  width: 100%;
+  padding: 14px 18px;
+
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 13px;
+  align-self: stretch;
+}
+
+.user:focus {
+  outline: 1px solid var(--orange);
+}
+
+.modal-btn-icon .user::placeholder {
+  font-size: 13px;
+  line-height: 1.21;
+
+  align-items: center;
+  letter-spacing: -0.02em;
+
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.modal-tel-wrap {
+  position: relative;
+}
+.modal-explore-tel-icon {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  left: 18px;
+  transform: translatey(-50%);
+  cursor: text;
+  pointer-events: none;
+}
+
+.modal-explore-tel-code {
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  top: 50%;
+  left: 50px;
+  transform: translatey(-50%);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+
+  pointer-events: none;
+}
+
+.modal-tel-icon::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  margin-left: 20px;
+  width: 1.5px;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.05);
+}
+
+.user-tel {
+  padding-left: 106px;
+}
+
+.user_comment {
+  height: 91px;
+  resize: none;
+}
+.modal-explore-btn {
+  padding: 12px 28px;
+  margin-top: 24px;
+
+  outline: none;
+}
+
+.modal-explore-btn:focus {
+  background-color: var(--light-orange);
+  color: var(--orange);
+}
