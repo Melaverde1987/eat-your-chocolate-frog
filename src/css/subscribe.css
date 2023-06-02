@@ -1,3 +1,29 @@
 .subscribe {
-  padding: 20px 0;
+  background-color: var(--black);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/bg-sub-mob.jpg);
+}
+
+.sub-headings {
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+.sub-text {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+.btn-sub {
+  width: 128px;
+  height: 41px;
+
 }
