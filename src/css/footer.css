@@ -14,7 +14,6 @@
   flex-direction: column;
   /* gap: 32px; */
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
 }
@@ -22,9 +21,6 @@
   .footer-section {
     padding: 50px 0;
   }
-  /* .footer-container {
-    padding: 32px 50px;
-  } */
 }
 .footer-upperblock {
   display: flex;
@@ -64,7 +60,7 @@
 .footer-all-contacts {
   display: flex;
   justify-content: space-between;
-  row-gap: 32px;
+  /* row-gap: 32px; */
 }
 @media only screen and (min-width: 768px) {
   .footer-all-contacts {
@@ -83,14 +79,11 @@
 .footer-contacts {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.29;
 }
 .footer-contacts-info {
   margin-bottom: 14px;
   font-weight: 500;
-  /* font-size: 14px;
-  line-height: 1.29; */
 }
 .footer-contacts-list {
   display: flex;
