@@ -37,6 +37,8 @@
 
   background-color: var(--light-white);
   overflow: hidden;
+
+
 }
 
 .modal-explore-pic {
@@ -121,20 +123,22 @@ color: rgba(64, 64, 64, 0.3);
 
 border: 1.5px solid rgba(17, 17, 17, 0.05);
 border-radius: 25px;
+
+
 }
 
-.user:focus {
+.explore_user_email:focus {
   outline: 1px solid var(--orange);
 }
 
 
 .modal-explore-btn {
   position: absolute;
-  top: 0;
+  bottom: 50%;
   right: 0;
- 
+ transform: translateY(50%);
 
-padding: 14px 22px;
+padding: 15px 22px;
 min-width: 100px;
   outline: none;
 
