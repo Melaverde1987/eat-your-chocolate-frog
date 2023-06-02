@@ -1,3 +1,18 @@
 .hero {
   padding: 20px 0;
+  outline: 1px solid red;
+}
+
+.hero-text{
+  background-color: rgb(160, 150, 150);
+width: 484px;
+height: 102px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 34px;
+letter-spacing: -0.03em;
+color: #FFFFFF;
+letter-spacing: -0.03em;
 }
