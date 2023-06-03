@@ -23,7 +23,8 @@
 }
 
 .btn-sub {
+  display: block;
   width: 128px;
   height: 41px;
-
+  margin: 0 auto;
 }
