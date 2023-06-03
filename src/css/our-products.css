@@ -73,3 +73,8 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
 }
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
