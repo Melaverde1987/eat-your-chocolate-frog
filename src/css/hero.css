@@ -119,11 +119,8 @@ margin-top: 32px;
   margin-top: 375px;
 }
 .arrow-button{
-padding: auto;
-width: 16px;
-height: 16px;
-left: 6px;
-top: 22px;
+display: flex;
+margin-left:2px;
 
 }
 .arrow-button:hover,
