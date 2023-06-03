@@ -1,6 +1,7 @@
 .hero {
   padding: 20px 0;
-  outline: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
 
 /* backround image */
 background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), 
@@ -17,11 +18,8 @@ top: 0px;
 
 /* hero text */
 .hero-text{
-outline: 1px solid red;
 width: 295px;
 height: 72px;
-font-family: 'Montserrat';
-font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 24px;
@@ -31,5 +29,63 @@ letter-spacing: -0.03em;
 }
 
 .hero-buttons-container{
-  outline: 1px solid red;
+  display: flex;
+  margin-top: 32px;
+  gap: 14px;
 }
+
+
+.hero-modal-btn{
+width: 120px;
+height: 41px;
+background: #FD9222;
+border-radius: 100px;
+border: 0;
+color: #FFFFFF;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+}
+
+.hero-how-btn{
+width: 159px;
+height: 41px;
+border: 1px solid #FFFFFF;
+border-radius: 100px;
+background-color: inherit;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+color: #FFFFFF;
+}
+
+.hero-scrol-btn{
+width: 28px;
+height: 28px;
+color: #FFFFFF;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: -0.03em;
+margin-top: 32px;
+
+
+}
+
+.hero-scrol-btn::before 
+{
+content: 'Scroll down';
+color: #FFFFFF;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: -0.03em;
+
+}
+
+.hero-blocks{
+ 
+  margin-top: 375px;
+}
+
