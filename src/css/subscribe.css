@@ -1,6 +1,9 @@
 .subscribe {
   background-color: var(--black);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/bg-sub-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .sub-headings {
@@ -27,4 +30,11 @@
   width: 128px;
   height: 41px;
   margin: 0 auto;
+}
+
+.sub-wrapper {
+  padding-top: 62px;
+  padding-bottom: 63px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
