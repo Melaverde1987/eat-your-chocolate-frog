@@ -1,23 +1,20 @@
-.unique-components {
-  background-color: #fafafa;
-}
-
 .unique-content {
   max-width: 335px;
   margin-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
-} 
+}
 
 .unique-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   color: var(--light-black);
-  text-align: center;
-  max-width: 283px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  padding-left: 26px;
+  padding-right: 26px;
   margin-bottom: 24px;
 }
 
@@ -27,17 +24,17 @@
 
 .unique-subscribe {
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.2;
   color: var(--light-black);
   text-align: center;
 }
 
 .unique-item {
   position: relative;
- max-width: 335px;
+  max-width: 335px;
   perspective: 1000px;
   overflow: hidden;
-  transition: transform 1s var(--cubic-transition); 
+  transition: transform 1s var(--cubic-transition);
 }
 
 .unique-card-wrapper {
@@ -49,9 +46,8 @@
   padding-bottom: 28px;
   border: 1px solid var(--orange);
   border-radius: 15px;
-  transition: transform 1s var(--cubic-transition); 
+  transition: transform 1s var(--cubic-transition);
   backface-visibility: hidden;
-  
 }
 
 .unique-item:hover .unique-card-wrapper {
@@ -82,7 +78,7 @@
   padding-left: 28px;
 }
 
-.unique-item:nth-child(2n+1) .unique-img-title {
+.unique-item:nth-child(2n + 1) .unique-img-title {
   color: var(--white);
 }
 
@@ -156,16 +152,16 @@
 
 @media screen and (min-width: 768px) {
   .unique-content {
-    max-width: 486px;
+    max-width: 488px;
     margin-bottom: 50px;
   }
 
   .unique-title {
     font-size: 24px;
     line-height: 1.16;
-    max-width: 411px;
+    padding-left: 38px;
+    padding-right: 38px;
     margin-bottom: 28px;
-    
   }
 }
 
@@ -175,8 +171,9 @@
     flex-wrap: wrap;
     gap: 32px;
   }
+
   .unique-item {
-    flex-basis: calc((100%-32px)/2);
+    flex-basis: calc((100% - 32px) / 2);
   }
 }
 
@@ -188,8 +185,8 @@
   }
 
   .unique-item {
-   max-width: 270px;
-   flex-basis: calc((100%-57px)/4);
+    max-width: 270px;
+    flex-basis: calc((100% - 57px) / 4);
   }
 
   .unique-img {
