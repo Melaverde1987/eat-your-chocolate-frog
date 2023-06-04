@@ -2,15 +2,7 @@ body {
   font-family: var(--font-primary);
 }
 
-/* .container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
-@media screen and (min-width: 375px) {
+/* @media screen and (min-width: 375px) {
   .container {
     max-width: 365px;
   }
@@ -26,10 +18,10 @@ body {
   .container {
     max-width: 1166px;
   }
-}
+} */
 
 .how-its-made-section {
-  padding-top: 128px;
+  padding-top: 72px;
 }
 
 .how-its-h {
@@ -48,7 +40,7 @@ body {
 
 .made-video {
   max-width: 335px;
-  max-height: 500px;
+  height: 500px;
   margin-bottom: 20px;
 }
 
