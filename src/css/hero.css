@@ -26,20 +26,22 @@ display: none;
 .hero-blocks {
   display: flex;
   flex-direction: column;
-margin-top: 375px;
-margin-bottom: 20px;
+
 
 }
 
 .hero-text {
+margin-top: 375px;
 width: 295px;
 height: 72px;
+font-family: 'Montserrat';
+font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 24px;
 letter-spacing: -0.03em;
 color: #FFFFFF;
-letter-spacing: -0.03em;
+
 }
 
 /* -------------------------------------------hero buttons------------------------- */
@@ -174,11 +176,13 @@ transform: rotate(-90deg);
   }
 
   .hero-blocks {
- 
-
+flex-direction: row;
+justify-content: space-between;
     }
   
   .hero-text {
+   
+    margin-top: 551px;
     width: 484px;
     height: 102px;
     font-weight: 500;
@@ -237,5 +241,8 @@ transform: rotate(-90deg);
     height: 600px;
   }
 
+  .hero-text {
 
+    margin-top: 361px;}
+   
 }
