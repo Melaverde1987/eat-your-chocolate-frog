@@ -43,7 +43,7 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.advantages-link {
+.advantages-span {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -52,15 +52,8 @@
   height: 62px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
-  outline: none;
-  transition: background-color 250ms var(--cubic-transition),
-    border-color 250ms var(--cubic-transition);
 }
-.advantages-link:hover,
-.advantages-link:focus {
-  background-color: var(--light-orange);
-  border-color: var(--orange);
-}
+
 @media screen and (min-width: 768px) {
   .advantages {
     padding: 50px 0px;
