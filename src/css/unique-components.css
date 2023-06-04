@@ -1,6 +1,7 @@
 .unique-components {
   padding-top: 72px;
 }
+
 .unique-content {
   max-width: 335px;
   margin-bottom: 32px;
@@ -52,9 +53,11 @@
   transition: transform 1s var(--cubic-transition);
   backface-visibility: hidden;
 }
+
 .unique-item:nth-child(3) .unique-card-wrapper {
-border: transparent;
+  border: transparent;
 }
+
 .unique-item:hover .unique-card-wrapper {
   transform: rotateY(180deg);
 }
@@ -106,7 +109,7 @@ border: transparent;
   transform: rotateY(180deg);
   transition: transform 1s var(--cubic-transition);
   backface-visibility: hidden;
- overflow: hidden; 
+  overflow: hidden;
   /* overflow: auto; */
 }
 
@@ -130,11 +133,12 @@ border: transparent;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
-  color: var(--light-black);
+  color: var(--white);
   margin-bottom: 14px;
-  background-color: #fafafa;
-  border: 1px solid var(--orange);
+  /* background-color: var(--orange);
+  border: 1px solid var(--orange); */
   border-radius: 35px;
+  transition: background-color 250ms var(--cubic-transition), color 250ms var(--cubic-transition);
 }
 
 /* .unique-item-btn:first-child .unique-overlay-btn {
@@ -144,7 +148,7 @@ border: transparent;
 .unique-item-btn:not(:first-child) .unique-overlay-btn {
   background-color: var(--white);
   color: var(--light-black);
-} */
+}  */
 
 .unique-overlay-text {
   font-size: 14px;
@@ -177,6 +181,7 @@ border: transparent;
   .unique-components {
     padding-top: 100px;
   }
+
   .unique-list {
     display: flex;
     flex-wrap: wrap;
@@ -192,6 +197,7 @@ border: transparent;
   .unique-components {
     padding-top: 128px;
   }
+
   .unique-list {
     display: flex;
     align-items: center;
@@ -209,5 +215,6 @@ border: transparent;
 
   .unique-overlay {
     padding: 20px;
+   
   }
 }
