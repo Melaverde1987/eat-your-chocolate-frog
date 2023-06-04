@@ -24,8 +24,11 @@ display: none;
 }
 
 .hero-blocks {
-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
 margin-top: 375px;
+margin-bottom: 20px;
+
 }
 
 .hero-text {
@@ -169,6 +172,11 @@ transform: rotate(-90deg);
     width: 704px;
     height: 790px;
   }
+
+  .hero-blocks {
+ 
+
+    }
   
   .hero-text {
     width: 484px;
