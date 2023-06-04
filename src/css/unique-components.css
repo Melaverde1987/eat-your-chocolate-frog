@@ -109,8 +109,6 @@
   transform: rotateY(180deg);
   transition: transform 1s var(--cubic-transition);
   backface-visibility: hidden;
-  overflow: hidden;
-  /* overflow: auto; */
 }
 
 .unique-overlay-title {
@@ -135,20 +133,10 @@
   line-height: 1.2;
   color: var(--white);
   margin-bottom: 14px;
-  /* background-color: var(--orange);
-  border: 1px solid var(--orange); */
   border-radius: 35px;
+  display: block;
   transition: background-color 250ms var(--cubic-transition), color 250ms var(--cubic-transition);
 }
-
-/* .unique-item-btn:first-child .unique-overlay-btn {
-  background-color: var(--orange);
-}
-
-.unique-item-btn:not(:first-child) .unique-overlay-btn {
-  background-color: var(--white);
-  color: var(--light-black);
-}  */
 
 .unique-overlay-text {
   font-size: 14px;
@@ -215,6 +203,19 @@
 
   .unique-overlay {
     padding: 20px;
-   
+  }
+  .unique-first-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+  }
+  .unique-second-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
   }
 }
