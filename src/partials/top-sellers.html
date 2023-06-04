@@ -1,8 +1,6 @@
 <section class="top-sellers">
   <div class="container top-seller-main">
-    <h2 class="top-text">
-      <span class="top-text-second">Top &nbsp;</span>Sellers
-    </h2>
+    <h2 class="top-text"><span class="top-text-second">Top </span>Sellers</h2>
     <ul class="top-sellers-items">
       <li class="top-sellers-list">
         <img
@@ -58,112 +56,124 @@
       <button class="top-button" data-modal-open type="button">Buy now</button>
     </div>
   </div>
-  <div class="top-backdrop container">
-    <div class="top-seller-modal"></div>
-    <button class="top-modal-button" data-modal-close type="button">
-      <svg class="top-modal-icon" width="7" height="7">
-        <use href="./img/sprite.svg/#close"></use>
-      </svg>
-    </button>
-    <!-- Form modal -->
-    <form class="top-seller-form">
-      <h2 class="top-text">Buy Now</h2>
-      <ul class="top-sellers-form-list">
-        <li class="top-sellers-form-item">
-          <img
-            class="top-sellers-form-img"
-            src="../img/top-sellers/modal/desc_tab_choko.png"
-            alt="Chokolate"
-            width="120"
-            height="107"
-          />
-        </li>
-        <li class="top-sellers-form-item">
-          <img
-            class="top-sellers-form-img"
-            src="../img/top-sellers/modal/desc_tab_wbchoko.png"
-            alt="White and black chokolate"
-            width="120"
-            height="111"
-          />
-        </li>
-        <li class="top-sellers-form-item">
-          <img
-            class="top-sellers-form-img"
-            src="../img/top-sellers/modal/desc_tab_chokolate.png"
-            alt="White and black chokolate"
-            width="120"
-            height="107"
-          />
-        </li>
-      </ul>
-      <label class="top-modal">
+  <!-- Form modal -->
+  <div class="top-backdrop" data-modal="sellers">
+    <div class="top-seller-modal">
+      <button class="top-modal-button" data-modal-close type="button">
+        <svg class="top-seller-modal-icon-close" width="24" height="24">
+          <use href="./img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <form class="top-seller-form">
+        <h2 class="top-text"><span class="top-text-second">Buy</span> Now</h2>
+        <ul class="top-sellers-form-list">
+          <div class="top-modal-title">
+            <li class="top-sellers-form-item">
+              <img
+                class="top-sellers-form-img"
+                src="../img/top-sellers/modal/desc_tab_choko.png"
+                alt="Chokolate"
+                width="84"
+                height="69"
+              />
+              <p class="top-modal-choko">100 g</p>
+            </li>
+            <li class="top-sellers-form-item">
+              <img
+                class="top-sellers-form-img"
+                src="../img/top-sellers/modal/desc_tab_wbchoko.png"
+                alt="White and black chokolate"
+                width="84"
+                height="69"
+              />
+              <p class="top-modal-choko">200 g</p>
+            </li>
+            <li class="top-sellers-form-item">
+              <img
+                class="top-sellers-form-img"
+                src="../img/top-sellers/modal/desc_tab_chokolate.png"
+                alt="White and black chokolate"
+                width="84"
+                height="69"
+              />
+              <p class="top-modal-choko">300 g</p>
+            </li>
+          </div>
+        </ul>
+        <label class="top-modal"></label>
         <span class="top-seller-info">Personal information</span>
-        <input
-          class="top-sellers-input"
-          type="text"
-          name="user name"
-          pattern="^[a-zA-Z]+$"
-          minlength="2"
-          placeholder="Name"
-        />
-      </label>
-      <input
-        class="top-sellers-input"
-        type="text"
-        name="user surname"
-        pattern="^[a-zA-Z]+$"
-        minlength="2"
-        placeholder="Surname"
-      />
-      <label class="top-modal">
+        <span class="top-sellers-modal-items">
+          <input
+            class="top-sellers-input top-name"
+            type="text"
+            name="user name"
+            pattern="^[a-zA-Z]+$"
+            minlength="2"
+            placeholder="Name"
+          />
+          <input
+            class="top-sellers-input"
+            type="text"
+            name="user surname"
+            pattern="^[a-zA-Z]+$"
+            minlength="2"
+            placeholder="Surname"
+          />
+        </span>
+        <label class="top-modal"></label>
         <span class="top-seller-info">Email</span>
-        <input
-          class="top-sellers-input"
-          type="email"
-          name="user-email"
-          id="email"
-          placeholder="Enter your email"
-        />
-      </label>
-      <label class="top-modal">
+        <span class="top-sellers-modal-items">
+          <input
+            class="top-sellers-input"
+            type="email"
+            name="user-email"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </span>
+
+        <label class="top-modal"></label>
         <span class="top-seller-info">Phone number</span>
-        <span class="top-seller-number">+380</span>
-        <input
-          class="top-sellers-input"
-          type="tel"
-          name="user-phone"
-          id="tel"
-          placeholder="Phone number"
-          pattern="[0-9]{14,23}"
-        />
-        <svg class="top-seller-modal" width="30.17" height="18.41">
-          <use href="./img/sprite.svg/#icon-Ukraine"></use>
-        </svg>
-      </label>
-      <label class="top-modal">
+
+        <span class="top-sellers-modal-items">
+          <input
+            class="top-sellers-input"
+            type="tel"
+            name="user-phone"
+            id="tel"
+            placeholder="Phone number"
+            pattern="[0-9]{14,23}"
+          />
+          <svg class="top-seller-modal-icon" width="24" height="18">
+            <use href="./img/sprite.svg#flag"></use>
+          </svg>
+          <span class="top-seller-number">+380</span>
+        </span>
+        <label class="top-modal"></label>
         <span class="top-seller-info">Card number</span>
-        <input
-          class="top-sellers-input"
-          type="number"
-          name="Cardnumber"
-          id="Card-number"
-          placeholder="Enter card"
-          pattern="[0-9]{14,23}"
-        />
-        <svg class="top-seller-modal" width="30.17" height="18.41">
-          <use href="./img/sprite.svg/#icon-Mastercard"></use>
-        </svg>
-      </label>
-      <label class="top-modal">
-        <span class="top-seller-info">Comment</span>
-        <textarea
-          class="top-seller-textarea"
-          name="Comment"
-          placeholder="Enter text"
-        ></textarea>
-      </label>
-      <button class="top-seller" type="button">Submit</button>
-    </form>
+        <span class="top-sellers-modal-items">
+          <input
+            class="top-sellers-input"
+            type="number"
+            name="Cardnumber"
+            id="Card-number"
+            placeholder="Enter card"
+            pattern="[0-9]{14,23}"
+          />
+          <svg class="top-seller-modal-icon" width="22" height="13">
+            <use href="./img/sprite.svg#mastercard"></use>
+          </svg>
+        </span>
+        <label class="top-modal">
+          <span class="top-seller-info">Comment</span>
+          <textarea
+            class="top-seller-textarea"
+            name="Comment"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+        <button class="top-seller" type="button">Submit</button>
+      </form>
+    </div>
   </div>
 </section>
