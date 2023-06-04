@@ -23,6 +23,7 @@
 
 .our-prod-list {
   /* display: flex; */
+  margin-bottom: 32px;
 }
 
 .our-prod-list-item {
@@ -73,8 +74,17 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
 }
-
+/* ---- js ---- */
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  height: calc(100% + 32px + 13px);
+}
+
+.swiper-pagination {
+  position: static;
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
 }
