@@ -2,13 +2,13 @@ body {
   font-family: var(--font-primary);
 }
 
-.container {
+/* .container {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 @media screen and (min-width: 375px) {
   .container {
@@ -29,7 +29,7 @@ body {
 }
 
 .how-its-made-section {
-  background-color: var(--white);
+  padding-top: 128px;
 }
 
 .how-its-h {
@@ -48,7 +48,7 @@ body {
 
 .made-video {
   max-width: 335px;
-  height: 400px;
+  max-height: 500px;
   margin-bottom: 20px;
 }
 
@@ -77,11 +77,13 @@ body {
 .made-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 18px;
   padding-left: 16px;
 }
 
 .made-list-item {
+  line-height: 18px;
+  letter-spacing: -0.02em;
   position: relative;
 }
 
@@ -107,11 +109,15 @@ body {
   .made-text {
     padding: 32px;
     max-width: 614px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .made-video {
     max-width: 614px;
-    height: 400px;
+    max-height: 400px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .made-text-h {
@@ -128,15 +134,14 @@ body {
 
   .how-its-h {
     margin-bottom: 50px;
-    font-size: 24px;
     line-height: 1.17;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .how-its-made-section .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .made-div {
@@ -146,6 +151,7 @@ body {
   }
 
   .made-video {
+    max-height: 400px;
     flex-grow: 1;
     margin-bottom: 0;
   }
