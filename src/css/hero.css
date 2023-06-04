@@ -241,6 +241,12 @@ justify-content: space-between;
     height: 600px;
   }
 
+  .hero-blocks {
+    flex-direction: row;
+  justify-content: flex-start;
+  gap: 14px;
+        }
+
   .hero-text {
 
     margin-top: 361px;}
