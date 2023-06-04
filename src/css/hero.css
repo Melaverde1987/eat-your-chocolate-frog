@@ -3,58 +3,32 @@
   margin-left: auto;
   margin-right: auto;
 
-/* backround image */
 
-/* HERO-MOBILE */
-background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), 
-url(../img/hero/hero-image-mobile.jpg);
-background-repeat: no-repeat;
-background-position: center;
-border-radius: 30px;
-width: 335px;
-height: 621px;
-left: 0px;
-top: 0px;
+/* ==================================HERO-MOBILE=================================== */
+
+  /* hero-background */
+  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+  url(../img/hero/hero-image-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  width: 335px;
+  height: 621px;
+  left: 0px;
+  top: 0px;
 }
 
-/* HERO-TABLET */
-@media screen and (min-width:768px) {
-  .hero {
-background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), 
-url(../img/hero/hero-image-tablet.jpg);
-background-repeat: no-repeat;
-background-position: center;
-border-radius: 30px;
-left: 0px;
-top: 0px;
-width: 704px;
-height: 790px;
-  }
-  
+/* -----------------------------------hero content----------------------------- */
+.hero-tite {
+display: none;
 }
 
-/* HERO-DESKTOP */
-@media screen and (min-width:1200px) {
-  .hero {
-background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), 
-url(../img/hero/hero-image-desktop.jpg);
-background-repeat: no-repeat;
-background-position: center;
-border-radius: 30px;
-left: 0px;
-top: 0px;
-width: 1136px;
-height: 600px;
-  }
-  
+.hero-blocks {
+color: #FFFFFF;
+margin-top: 375px;
 }
 
-.hero-tite{
-  display: none;
-}
-
-/* hero text */
-.hero-text{
+.hero-text {
 width: 295px;
 height: 72px;
 font-weight: 500;
@@ -65,14 +39,16 @@ color: #FFFFFF;
 letter-spacing: -0.03em;
 }
 
-.hero-buttons-container{
-  display: flex;
-  margin-top: 32px;
-  gap: 14px;
+/* -------------------------------------------hero buttons------------------------- */
+.hero-buttons-container {
+display: flex;
+margin-top: 32px;
+gap: 14px;
 }
 
+/* ---------------------------------------hero modal button--------------------- */
 
-.hero-modal-btn{
+.hero-modal-btn {
 width: 120px;
 height: 41px;
 background: #FD9222;
@@ -85,14 +61,15 @@ line-height: 17px;
 }
 
 .hero-modal-btn:hover,
-.hero-modal-btn:focus{
- background-color: 
- #FCF1E0;
- color: #FD9222;
- transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+.hero-modal-btn:focus {
+background-color:
+#FCF1E0;
+color: #FD9222;
+transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/*---------------------------------- hero how-button------------------------- */
 
-.hero-how-btn{
+.hero-how-btn {
 width: 159px;
 height: 41px;
 border: 1px solid #FFFFFF;
@@ -105,74 +82,154 @@ line-height: 17px;
 color: #FFFFFF;
 }
 
-
-.hero-scrol-btn-container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 12px;
-
-}
-
-
-.hero-scroll-title{
-
-margin-top: 32px;
-
-}
-.hero-scrol-btn{
-  width: 28px;
-  height: 28px;
-  color: #FFFFFF;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: -0.03em;
-  margin-top: 32px;
-  color: black;
-  fill: #FD9222;
-  border: 0;
-
-  }
-  .hero-scrol-btn:hover,
-  .hero-scrol-btn:focus
-  {
-    background-color: #FD9222;
-    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-   fill: #FFFFFF;
-  }
-
-  .hero-scroll-title:hover,
-  .hero-scroll-title:focus{
-    color: #FD9222;
-    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-.hero-blocks{
-  color: #FFFFFF;
- 
-  margin-top: 375px;
-}
-.arrow-button{
-display: flex;
-margin-left:2px;
-
-}
-.arrow-button:hover,
-.arrow-button:focus{
-  transform: rotate(-90deg);
- 
-}
-
 .hero-how-btn:hover,
-.hero-how-btn:focus{
+.hero-how-btn:focus {
+color: #FD9222;
+border-color: #FD9222;
+transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* -------------------------------------hero scroll button--------------------- */
+
+
+.hero-scrol-btn-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+}
+
+
+
+.hero-scroll-title {
+margin-top: 32px;
+width: 67px;
+height: 14px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: -0.03em;
+color: #FFFFFF;
+
+}
+
+.hero-scrol-btn {
+width: 28px;
+height: 28px;
+color: #FFFFFF;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: -0.03em;
+margin-top: 32px;
+color: black;
+fill: #FD9222;
+border: 0;
+}
+
+.hero-scrol-btn:hover,
+.hero-scrol-btn:focus {
+background-color: #FD9222;
+transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+fill: #FFFFFF;
+}
+
+.hero-scroll-title:hover,
+.hero-scroll-title:focus {
   color: #FD9222;
-  border-color: #FD9222;
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ------------------------------arrov button-icon------------------------- */
+.arrow-button {
+display: flex;
+margin-left: 2px;
+}
+
+.arrow-button:hover,
+.arrow-button:focus {
+transform: rotate(-90deg);
+}
+
+/* =====================================HERO END MOBILE=================== */
 
 
+/* =====================================HERO-TABLET======================== */
+@media screen and (min-width:768px) {
+  .hero {
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+      url(../img/hero/hero-image-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    left: 0px;
+    top: 0px;
+    width: 704px;
+    height: 790px;
+  }
+  
+  .hero-text {
+    width: 484px;
+    height: 102px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    }
 
+    .hero-modal-btn {
+      width: 144px;
+      height: 45px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    .hero-how-btn {
+      width: 183px;
+      height: 45px;}
+
+      .hero-scroll-title {
+        width: 78px;
+        height: 18px;
+        font-size: 14px;
+        line-height: 18px;}
+
+        .hero-scrol-btn {
+          width: 38px;
+          height: 38px;}
+
+          .arrow-button {
+            width: 18px;
+            height: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          padding: 0;
+          margin-left: 4px;
+            }
+
+
+}
+
+/* =======================================HERO-DESKTOP=========================== */
+@media screen and (min-width:1200px) {
+  .hero {
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+      url(../img/hero/hero-image-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    left: 0px;
+    top: 0px;
+    width: 1136px;
+    height: 600px;
+  }
+
+
+}
