@@ -143,33 +143,9 @@
       <div class="swiper-pagination"></div>
     </div>
   </div>
-
-  <!-- Slider main container -->
-  <!-- <div class="swiper"> -->
-
-  <!-- Additional required wrapper -->
-  <!-- <div class="swiper-wrapper"> -->
-
-  <!-- Slides -->
-  <!-- <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div> -->
-
-  <!-- </div> -->
-  <!-- If we need pagination -->
-  <!-- <div class="swiper-pagination"></div> -->
-
-  <!--  -->
-  <!-- If we need navigation buttons -->
-  <!-- <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div> -->
-
-  <!-- If we need scrollbar -->
-  <!-- <div class="swiper-scrollbar"></div> -->
-  <!--  -->
-  <!-- </div> -->
 </section>
-<!-- добавить под футером -->
+
+<!-- script Slider final -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <!-- перед закрывающим тэгом боди -->
 <script>
@@ -177,6 +153,27 @@
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    slidesPerView: 1,
+    spaceBetween: 18,
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 18,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 18,
+      },
+
+      // when window width is >= 1200px
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 18,
+      },
+    },
 
     // If we need pagination
     pagination: {

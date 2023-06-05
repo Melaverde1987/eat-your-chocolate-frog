@@ -74,7 +74,7 @@
 /* ---- js ---- */
 .swiper {
   width: 100%;
-  height: calc(100% + 32px + 13px) !important;
+  height: calc(100% + 32px) !important;
 }
 
 .swiper-pagination {
