@@ -65,16 +65,12 @@
 /* ---- js ---- */
 .swiper {
   width: 100%;
-  height: calc(100% + 32px) !important;
+  height: 100%;
 }
-
 .swiper-pagination {
   position: static !important;
 }
 
-.swiper-pagination-bullet-active {
-  background-color: var(--orange) !important;
-}
 .swiper-pagination-bullet {
   width: var(
     --swiper-pagination-bullet-width,
@@ -84,4 +80,13 @@
     --swiper-pagination-bullet-height,
     var(--swiper-pagination-bullet-size, 13px)
   ) !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 28px)
+  ) !important;
+  border-radius: 10px;
+  background-color: var(--orange) !important;
 }
