@@ -64,7 +64,7 @@ const swiper = new Swiper('.swiper', {
 //   },
 // });
 
-var swiper2 = new Swiper('.mySwiper', {
+var reviewSwiper = new Swiper('.mySwiper', {
   slidesPerView: 3,
   spaceBetween: 30,
   slidesPerGroup: 3,
