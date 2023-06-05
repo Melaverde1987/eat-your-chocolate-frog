@@ -14,7 +14,7 @@ const swiper = new Swiper('.swiper', {
     },
     //  >= 768px
     768: {
-      slidesPerView: 2,
+      slidesPerView: 4,
       spaceBetween: 18,
     },
 
@@ -35,9 +35,11 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
+  /*
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+  */
 });
 
 // const swiper = new Swiper('.swiper', {
