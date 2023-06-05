@@ -1,5 +1,17 @@
-.our-products {
-  padding: 20px 0;
+@media only screen and (max-width: 767px) {
+  .our-products {
+    padding: 72px 0 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-products {
+    padding: 100px 0 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .our-products {
+    padding: 128px 0 0;
+  }
 }
 .centr {
   display: flex;
@@ -15,8 +27,15 @@
   color: var(--orange);
 }
 
-.our-prod-list {
-  margin-bottom: 32px;
+@media only screen and (max-width: 767px) {
+  .our-prod-list {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .our-prod-list {
+    margin-bottom: 32px;
+  }
 }
 
 .our-prod-box {
@@ -36,6 +55,7 @@
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.02em;
+  margin-top: 8px;
   margin-bottom: 2px;
 }
 .our-prod-text {
@@ -57,7 +77,7 @@
   justify-content: center;
   align-items: center;
 
-  background: #fafafa;
+  background: var(--light-white);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
 }
