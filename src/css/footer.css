@@ -103,14 +103,17 @@
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socials-icons {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 22px;
   height: 22px;
   fill: var(--white);
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width: 768px) {
-  .footer-socials-icons {
+  .footer-socials-icons,
+  .footer-socials-icons .icon {
     width: 24px;
     height: 24px;
   }

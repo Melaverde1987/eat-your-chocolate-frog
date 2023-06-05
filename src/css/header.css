@@ -276,6 +276,14 @@ MOBILE MENU
   fill: var(--white);
 }
 
+@media only screen and (min-width: 768px) {
+  .menu-container .social-icon,
+  .menu-container .social-icon .icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .menu-container .social-icon:focus .icon,
 .menu-container .social-icon:focus-visible .icon {
   fill: var(--orange);
