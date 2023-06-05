@@ -65,13 +65,31 @@ const swiper = new Swiper('.swiper', {
 // });
 
 var reviewSwiper = new Swiper('.mySwiper', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
-  slidesPerGroup: 3,
+  slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
+  breakpoints: {
+    //  >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    //  >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+    },
+
+    //  >= 1200px
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 28,
+    },
+  },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-reviews-pagination',
     clickable: true,
   },
   navigation: {
