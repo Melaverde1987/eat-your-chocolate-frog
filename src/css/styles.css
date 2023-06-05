@@ -61,6 +61,7 @@ body {
   line-height: 1.2;
   font-weight: 400;
   color: var(--light-black);
+  background-color: var(--light-white);
 }
 
 .container {
