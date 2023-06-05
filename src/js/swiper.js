@@ -1,3 +1,44 @@
+// js SwiperOurProducts
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 18,
+
+  breakpoints: {
+    //  >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 18,
+    },
+    //  >= 768px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 18,
+    },
+
+    //  >= 1200px
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 18,
+    },
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',

@@ -14,15 +14,9 @@
 .our-prod-head-span {
   color: var(--orange);
 }
-.our-prod-box-list {
-}
 
 .our-prod-list {
   margin-bottom: 32px;
-}
-
-.our-prod-list-item {
-  /* max-width: 270px !important; */
 }
 
 .our-prod-box {
@@ -35,9 +29,6 @@
   background: #ffffff;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
-}
-
-.our-prod-img {
 }
 
 .our-prod-h {
