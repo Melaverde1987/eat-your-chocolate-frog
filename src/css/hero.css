@@ -2,256 +2,261 @@
   padding: 20px 0;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 72px;
 
-
-/* ==================================HERO-MOBILE=================================== */
+  /* ==================================HERO-MOBILE=================================== */
 
   /* hero-background */
-  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
-  url(../img/hero/hero-image-mobile.jpg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../img/hero/hero-image-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 30px;
-  width: 335px;
+  max-width: 335px;
   height: 621px;
- 
 }
 
 /* -----------------------------------hero content----------------------------- */
-  .hero-tite {
-  visibility: hidden;
-  }
 
 .hero-blocks {
   display: flex;
   flex-direction: column;
-
-
 }
 
 .hero-text {
-margin-top: 375px;
-width: 295px;
-height: 72px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: -0.03em;
-color: #FFFFFF;
-
+  margin-top: 375px;
+  width: 295px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  color: var(--white);
 }
 
 /* -------------------------------------------hero buttons------------------------- */
 .hero-buttons-container {
-display: flex;
-gap: 14px;
-margin: 32px 0;
+  display: flex;
+  gap: 14px;
+  margin: 32px 0;
 }
-.hero-btn{
+.hero-btn {
   padding: 0;
 }
 
 /* ---------------------------------------hero modal button--------------------- */
 
 .hero-modal-btn {
-width: 120px;
-height: 41px;
-background: #FD9222;
-border-radius: 100px;
-border: 0;
-color: #FFFFFF;
-font-weight: 600;
-font-size: 14px;
-line-height: 17px;
-padding: 0;
+  width: 120px;
+  height: 41px;
+  background: var(--orange);
+  border-radius: 100px;
+  border: 0;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-modal-btn:hover,
 .hero-modal-btn:focus {
-background-color:
-#FCF1E0;
-color: #FD9222;
-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #fcf1e0;
+  color: var(--orange);
 }
 /*---------------------------------- hero how-button------------------------- */
 
 .hero-how-btn {
-width: 159px;
-height: 41px;
-border: 1px solid #FFFFFF;
-border-radius: 100px;
-background-color: inherit;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 17px;
-color: #FFFFFF;
+  width: 159px;
+  height: 41px;
+  border: 1px solid var(--white);
+  border-radius: 100px;
+  background-color: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-how-btn:hover,
 .hero-how-btn:focus {
-color: #FD9222;
-border-color: #FD9222;
-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--orange);
+  border-color: var(--orange);
 }
 
 /* -------------------------------------hero scroll button--------------------- */
 
-
 .hero-scrol-btn-container {
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  cursor: pointer;
 }
 
-
-
 .hero-scroll-title {
-width: 67px;
-height: 14px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: -0.03em;
-color: #FFFFFF;
-
+  width: 67px;
+  height: 14px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.03em;
+  color: var(--white);
 }
 
 .hero-scrol-btn {
-width: 28px;
-height: 28px;
-color: #FFFFFF;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: -0.03em;
-color: black;
-fill: #FD9222;
-border: 0;
+  width: 28px;
+  height: 28px;
+  color: var(--white);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.03em;
+  color: black;
+  border: 0;
 }
 
 .hero-scrol-btn:hover,
 .hero-scrol-btn:focus {
-background-color: #FD9222;
-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-fill: #FFFFFF;
+  background-color: var(--orange);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--white);
 }
 
 .hero-scroll-title:hover,
 .hero-scroll-title:focus {
-  color: #FD9222;
+  color: var(--orange);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------------------------------arrov button-icon------------------------- */
 .arrow-button {
-display: flex;
-margin: auto;
+  display: flex;
+  margin: auto;
+  fill: var(--orange);
 }
 
 .arrow-button:hover,
 .arrow-button:focus {
-transform: rotate(-90deg);
+  /*
+  transform: rotate(-90deg);
+  */
+  fill: var(--white);
 }
 
 /* =====================================HERO END MOBILE=================== */
 
-
 /* =====================================HERO-TABLET======================== */
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
       url(../img/hero/hero-image-tablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 30px;
-    left: 0px;
-    top: 0px;
-    width: 704px;
+    max-width: 704px;
     height: 790px;
+    margin-bottom: 50px;
   }
 
   .hero-blocks {
-flex-direction: row;
-justify-content: space-between;
-    }
-  
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .hero-text {
-   
     margin-top: 551px;
     width: 484px;
-    height: 102px;
     font-weight: 500;
     font-size: 28px;
-    line-height: 34px;
+    line-height: 1.21;
     letter-spacing: -0.03em;
-    color: #FFFFFF;
-    }
+    color: var(--white);
+  }
 
-    .hero-modal-btn {
-      width: 144px;
-      height: 45px;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 17px;
-    }
+  .hero-modal-btn {
+    width: 144px;
+    height: 45px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
 
-    .hero-how-btn {
-      width: 183px;
-      height: 45px;}
+  .hero-how-btn {
+    width: 183px;
+    height: 45px;
+  }
 
-      .hero-scroll-title {
-        width: 78px;
-        height: 18px;
-        font-size: 14px;
-        line-height: 18px;}
+  .hero-scroll-title {
+    width: 78px;
+    height: 18px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 
-        .hero-scrol-btn {
-          width: 38px;
-          height: 38px;}
+  .hero-scrol-btn {
+    width: 38px;
+    height: 38px;
+  }
 
-          .arrow-button {
-            width: 18px;
-            height: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          padding: 0;
-         margin: auto;
-            }
-
-
+  .arrow-button {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+  }
 }
 
 /* =======================================HERO-DESKTOP=========================== */
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
       url(../img/hero/hero-image-desktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 30px;
     left: 0px;
     top: 0px;
-    width: 1136px;
+    max-width: 1136px;
     height: 600px;
+    margin-bottom: 72px;
   }
 
   .hero-blocks {
     flex-direction: row;
-  justify-content: flex-start;
-  gap: 14px;
-        }
+    justify-content: space-between;
+    gap: 14px;
+  }
 
   .hero-text {
-
-    margin-top: 361px;}
-   
+    margin-top: 361px;
+  }
 }
