@@ -118,6 +118,7 @@
   line-height: 14px;
   letter-spacing: -0.03em;
   color: var(--white);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-scrol-btn {
@@ -131,19 +132,22 @@
   letter-spacing: -0.03em;
   color: black;
   border: 0;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-scrol-btn:hover,
 .hero-scrol-btn:focus {
   background-color: var(--orange);
-  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-scrol-btn:hover .arrow-button,
+.hero-scrol-btn:focus .arrow-button {
   fill: var(--white);
 }
 
 .hero-scroll-title:hover,
 .hero-scroll-title:focus {
   color: var(--orange);
-  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------------------------------arrov button-icon------------------------- */
@@ -151,15 +155,16 @@
   display: flex;
   margin: auto;
   fill: var(--orange);
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/*
 .arrow-button:hover,
 .arrow-button:focus {
-  /*
   transform: rotate(-90deg);
-  */
   fill: var(--white);
 }
+*/
 
 /* =====================================HERO END MOBILE=================== */
 
