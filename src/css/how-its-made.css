@@ -1,3 +1,159 @@
-.how-its-made {
-  padding: 20px 0;
+body {
+  font-family: var(--font-primary);
+}
+
+/* @media screen and (min-width: 375px) {
+  .container {
+    max-width: 365px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 734px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1166px;
+  }
+} */
+
+.how-its-made-section {
+  padding-top: 72px;
+}
+
+.how-its-h {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.how-its-hh {
+  color: var(--orange);
+}
+
+.made-video {
+  max-width: 335px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.how-its-made-video {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  /* border-color: transparent; */
+  border: none;
+}
+
+.made-text {
+  max-width: 335px;
+  padding: 20px 14px;
+  background: var(--white);
+  border-radius: 15px;
+}
+
+.made-text-h {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-bottom: 20px;
+}
+
+.made-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding-left: 16px;
+}
+
+.made-list-item {
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  position: relative;
+}
+
+.made-list-item::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  left: -16px;
+  top: 5px;
+  background: rgba(76, 76, 76, 1);
+  border: 1px solid rgba(236, 237, 237, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .how-its-made-section .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .made-text {
+    padding: 32px;
+    max-width: 614px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .made-video {
+    max-width: 614px;
+    max-height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .made-text-h {
+    margin-bottom: 28px;
+  }
+
+  .made-next-line {
+    display: block;
+  }
+
+  .made-list {
+    padding-right: 63px;
+  }
+
+  .how-its-h {
+    margin-bottom: 50px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .how-its-made-section .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .made-div {
+    column-gap: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .made-video {
+    max-height: 400px;
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+
+  .made-list {
+    row-gap: 24px;
+    padding-right: 20px;
+  }
+
+  .made-text {
+    max-width: 516px;
+  }
 }
