@@ -1,3 +1,4 @@
+/*
 (() => {
     const refs = {
       openModalBtn: document.querySelector("[data-modal-review-open]"),
@@ -12,3 +13,4 @@
       refs.modal.classList.toggle("is-hidden");
     }
   })();
+  */
