@@ -14,14 +14,13 @@
   border-radius: 30px;
   width: 335px;
   height: 621px;
-  left: 0px;
-  top: 0px;
+ 
 }
 
 /* -----------------------------------hero content----------------------------- */
-.hero-tite {
-display: none;
-}
+  .hero-tite {
+  visibility: hidden;
+  }
 
 .hero-blocks {
   display: flex;
