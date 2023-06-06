@@ -19,8 +19,8 @@
   padding: 201px 24px 32px 24px;
 
   border-radius: 15px;
-  width: 311px ;
-  max-width: 90%;
+  width: 90% ;
+  max-width: 311px;
 
   background-color: var(--light-white);
   overflow: hidden;
@@ -31,7 +31,7 @@
 
 @media screen and (min-width: 768px) {
   .modal-explore {
-    width: 538px;
+    max-width: 538px;
     padding: 236px 40px 40px 40px;
   }
 }
