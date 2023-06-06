@@ -9,16 +9,22 @@
         </p>
         <button type="button" class="modal-explore-btn-close" data-modal-explore-close>
             <svg class="modal-btn-icon" width="24" hieght="24">
-                <use href="../img/sprite.svg#close">
+                <use href="./img/sprite.svg#close">
 
                 </use>
             </svg>
         </button>
 
         <!-- modal form -->
-        <form class="modal-explore-form">
-            <label id="user_email" class="visually-hidden">mail</label>
-            <input type="email" class="explore_user_email" placeholder="Enter your email" required>
+        <form action="#" name="explore_form" class="modal-explore-form">
+            <label  for="user_email" class="visually-hidden">mail</label>
+            <input
+            id="user_email"
+            type="email" 
+            name="user_email" 
+            class="explore-user-email" 
+            placeholder="Enter your email" 
+            required>
 
            <button type="submit" class="btn-primary modal-explore-btn">Subscribe</button>
  
