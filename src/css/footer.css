@@ -1,3 +1,8 @@
+/**
+  |============================
+  | FOOTER SECTION
+  |============================
+**/
 .footer-section {
   padding: 32px 0;
   color: var(--white);
@@ -123,16 +128,19 @@
 .footer-socials-icons:active {
   fill: var(--orange);
 }
+
+/***************** FOOTER LINKS ********************/
+
 .footer-line {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 32px;
-}
-@media only screen and (min-width: 768px) {
-  .footer-line {
-    margin-bottom: 24px;
-  }
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-menu {
+  padding-top: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .footer-menu {
+    padding-top: 24px;
+  }
 }
 .footer-menu-list {
   display: flex;
