@@ -1,0 +1,248 @@
+.backdrop-explore {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  background-color: rgba(69, 64, 73, 0.3);
+  backdrop-filter: blur(1px);
+  width: 100%;
+  height: 100%;
+}
+
+.modal-explore {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 201px 24px 32px 24px;
+
+  border-radius: 15px;
+  width: 90% ;
+  max-width: 311px;
+
+  background-color: var(--light-white);
+  overflow: hidden;
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-explore {
+    max-width: 538px;
+    padding: 236px 40px 40px 40px;
+  }
+}
+
+.modal-explore-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 169px;
+
+  background-color: rgb(54, 18, 18);
+  background-image: url(../img/modal-explore/mod-exp_mob.jpg);
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .modal-explore-pic {
+    background-image: url(../img/modal-explore/mod-exp_mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-explore-pic {
+    height: 196px;
+    background-image: url(../img/modal-explore/mod-exp_desk.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modal-explore-pic {
+      background-image: url(../img/modal-explore/mod-exp_desk@2x.jpg);
+    }
+  }
+}
+
+.modal-explore-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--light-black);
+
+  width: 263px;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-explore-title {
+    font-size: 24px;
+    line-height: 1.17;
+
+    width: 298px;
+  }
+}
+
+.modal-explore-title-part-two {
+  display: block;
+}
+
+.modal-explore-title-color {
+  color: var(--orange);
+}
+
+.modal-explore-btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 24px;
+  height: 24px;
+
+  padding: 0;
+  border: none;
+
+  margin: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  fill: var(--white);
+
+  transition: background-color 250ms var(--cubic-transition),
+    color 250ms var(--cubic-transition);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-explore-btn-close {
+    width: 28px;
+    height: 28px;
+
+    margin: 24px;
+  }
+}
+
+.modal-explore-btn-close:hover,
+.modal-explore-btn-close:focus {
+  outline: none;
+  fill: var(--orange);
+  background-color: var(--light-orange);
+}
+
+.modal-btn-icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-btn-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.modal-explore-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-explore-form {
+    margin-top: 28px;
+  }
+}
+
+.explore-user-email {
+  padding: 14px 18px;
+
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+
+  color: var(--black);
+
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .explore-user-email {
+    font-size: 18px;
+    line-height: 1.22;
+
+    padding: 14px 24px;
+    margin-right: 145px;
+  }
+}
+
+.explore-user-email::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.explore-user-email:focus {
+  outline: 1px solid var(--orange);
+}
+
+.modal-explore-btn {
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  transform: translateY(50%);
+
+  padding: 15px 22px;
+  min-width: 100px;
+  outline: none;
+
+  font-weight: 600;
+
+  transition: background-color 250ms var(--cubic-transition),
+    color 250ms var(--cubic-transition);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-explore-btn {
+
+    padding: 18px 32px;
+    min-width: 137px;
+
+    font-weight: 600;
+  }
+}
+
+.modal-explore-btn:focus {
+  background-color: var(--light-orange);
+  color: var(--orange);
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.backdrop-explore.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
