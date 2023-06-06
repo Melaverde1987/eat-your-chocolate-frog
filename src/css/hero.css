@@ -49,6 +49,9 @@ display: flex;
 gap: 14px;
 margin: 32px 0;
 }
+.hero-btn{
+  padding: 0;
+}
 
 /* ---------------------------------------hero modal button--------------------- */
 
@@ -62,6 +65,7 @@ color: #FFFFFF;
 font-weight: 600;
 font-size: 14px;
 line-height: 17px;
+padding: 0;
 }
 
 .hero-modal-btn:hover,
