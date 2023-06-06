@@ -23,7 +23,6 @@
   position: relative;
   margin-bottom: 20px;
   margin-top: 42px;
-  
 }
 
 .reviews_image {
@@ -78,17 +77,22 @@
   padding: 0;
 }
 
+.reviews_botton:focus,
+.reviews_botton :hover {
+  background: #fd9222;
+  color: #ffffff;
+}
 
-
-.mySwiper{
+.mySwiper {
   margin-bottom: 20px;
   overflow: hidden;
 }
 
-
-.swiper-reviews-pagination{text-align: center;
-  transition: .3s opacity;
-  transform: translate3d(0,0,0);}
+.swiper-reviews-pagination {
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+}
 
 .swiper-pagination-bullet {
   width: 13px;
@@ -115,11 +119,15 @@
     padding: 56px 16px 42px;
   }
 
-  .mySwiper{
-    margin-bottom: 31px;
+  .reviews_botton {
+    font-size: 18px;
+    width: 222px;
+    height: 50px;
   }
 
-
+  .mySwiper {
+    margin-bottom: 31px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -127,5 +135,4 @@
     width: 360px;
     padding: 56px 24px 42px;
   }
-
 }
