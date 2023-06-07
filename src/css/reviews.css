@@ -81,7 +81,7 @@
 }
 
 .reviews-botton:focus,
-.reviews-botton :hover {
+.reviews-botton:hover {
   background: #fd9222;
   color: #ffffff;
 }
