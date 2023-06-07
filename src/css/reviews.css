@@ -1,3 +1,143 @@
-.reviews {
-  padding: 20px 0;
+.reviews{margin-bottom: 72px;}
+
+.reviews-title {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  line-height: 1.16;
+  color:  #111111;
+  margin-bottom: 32px;
+}
+
+.reviews-title-chocolate {
+  color: #fd9222;
+}
+
+.reviews-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 42px;
+}
+
+.reviews-image {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 18px;
+}
+
+.reviews-text-name {
+  text-align: center;
+
+  width: 334px;
+  height: 200px;
+
+  padding: 56px 18px 42px;
+
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+}
+
+.reviews-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #111111;
+  margin-bottom: 24px;
+}
+
+.reviews-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+  background-color: transparent;
+}
+.reviews-botton {
+  font-size: 14px;
+  line-height: 17px;
+  width: 165px;
+  height: 41px;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.reviews-botton:focus,
+.reviews-botton :hover {
+  background: #fd9222;
+  color: #ffffff;
+}
+
+.mySwiper {
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+.swiper-reviews-pagination {
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  border-radius: 50px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+  border-radius: 15px;
+  background: #fd9222;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews{margin-bottom: 100px;}
+
+  .reviews-title {
+    font-size: 24px;
+    margin-bottom: 49px;
+  }
+
+  .reviews-text-name {
+    width: 344px;
+
+    padding: 56px 16px 42px;
+  }
+
+  .reviews-botton {
+    font-size: 18px;
+    width: 222px;
+    height: 50px;
+  }
+
+  .mySwiper {
+    margin-bottom: 50px;}
+  
+  .swiper-wrapper{margin-bottom: 20px;}
+  }
+
+@media screen and (min-width: 1200px) {
+  .reviews{margin-bottom: 128px;}
+
+  .reviews-text-name {
+    width: 360px;
+    padding: 56px 24px 42px;
+  }
 }
