@@ -273,6 +273,12 @@
     padding: 18px 14px;
     background-color: transparent;
   }
+
+  @media only screen and (min-width: 768px) {
+    .top-seller-textarea {
+      padding: 22px 24px;
+    }
+  }
   .top-seller-modal-icon-flag {
     position: absolute;
     top: 45%;
@@ -291,7 +297,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
-    top: 45%;
+    top: 50%;
     left: 50px;
     transform: translateY(-50%);
     padding: 0 8px;
@@ -470,13 +476,19 @@
   height: 100%;
 }
 
-input::placeholder {
+input,
+input::placeholder,
+textarea,
+textarea::placeholder {
   font-size: 14px;
   line-height: 1.21;
 }
 
 @media only screen and (min-width: 768px) {
-  input::placeholder {
+  input,
+  input::placeholder,
+  textarea,
+  textarea::placeholder {
     font-size: 18px;
     line-height: 1.22;
   }
