@@ -1,6 +1,7 @@
 .subscribe {
   background-color: var(--black);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/bg-sub-mob.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/subscribe/bg-sub-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,10 +10,14 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .subscribe {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
       url(../img/subscribe/bg-sub-mob@2x.jpg);
   }
 }
@@ -21,15 +26,23 @@
   .subscribe {
     padding-top: 72px;
     padding-bottom: 72px;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
       url(../img/subscribe/bg-sub-tab.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .subscribe {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
         url(../img/subscribe/bg-sub-tab@2x.jpg);
     }
   }
@@ -37,15 +50,23 @@
 
 @media screen and (min-width: 1200px) {
   .subscribe {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
       url(../img/subscribe/bg-sub-pc.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .subscribe {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
         url(../img/subscribe/bg-sub-pc@2x.jpg);
     }
   }
@@ -72,7 +93,6 @@
     max-width: 378px;
     margin: 0 auto;
   }
-
 }
 
 .sub-text {
@@ -94,10 +114,8 @@
 .btn-sub {
   display: block;
   min-width: 128px;
-  height: 41px;
   margin: 0 auto;
   transition: background-color 250ms var(--cubic-transition);
-
 }
 
 .btn-sub:focus,
@@ -110,5 +128,4 @@
     min-width: 172px;
     height: 50px;
   }
-
 }
