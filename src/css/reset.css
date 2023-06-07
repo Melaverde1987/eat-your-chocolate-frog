@@ -33,3 +33,8 @@ img {
   height: auto;
   object-fit: cover;
 }
+
+input:focus,
+textarea:focus {
+  outline: 1px solid var(--orange);
+}

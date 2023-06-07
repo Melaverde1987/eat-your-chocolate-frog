@@ -427,3 +427,33 @@
     margin-left: auto;
   }
 }
+
+.modal-btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  margin: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 250ms var(--cubic-transition),
+    color 250ms var(--cubic-transition);
+}
+@media screen and (min-width: 768px) {
+  .modal-btn-close {
+    width: 28px;
+    height: 28px;
+    margin: 24px;
+  }
+}
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+  outline: none;
+  fill: var(--orange);
+  background-color: var(--light-orange);
+}
