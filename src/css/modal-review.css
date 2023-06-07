@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
 
   background-color: rgba(69, 64, 73, 0.3);
   backdrop-filter: blur(1px);
@@ -35,11 +36,8 @@
     padding: 40px;
     max-width: 517px;
     width: 100%;
-    
+  }
 }
-}
-
-
 
 .modal-review-title {
   font-weight: 600;
@@ -53,16 +51,14 @@
 }
 @media screen and (min-width: 768px) {
   .modal-review-title {
-    
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: -0.03em;
-     
+
     width: 298px;
     max-width: 100%;
   }
 }
-
 
 .modal-title-part-one {
   display: block;
@@ -77,10 +73,6 @@
 .modal-title-color {
   color: var(--orange);
 }
-
-
-
-
 
 .modal-btn-close {
   position: absolute;
@@ -101,31 +93,24 @@
   background-color: transparent;
 
   transition: background-color 250ms var(--cubic-transition),
-  color 250ms var(--cubic-transition);
+    color 250ms var(--cubic-transition);
 }
 
 @media screen and (min-width: 768px) {
   .modal-btn-close {
-   
     width: 28px;
     height: 28px;
-  
+
     margin: 24px;
-    }
+  }
 }
-
-
-
 
 .modal-btn-close:hover,
 .modal-btn-close:focus {
   outline: none;
-fill: var(--orange);
-background-color: var(--light-orange);
-
-
+  fill: var(--orange);
+  background-color: var(--light-orange);
 }
-
 
 .modal-btn-icon {
   width: 24px;
@@ -139,7 +124,6 @@ background-color: var(--light-orange);
   }
 }
 
-
 .modal-review-form {
   display: flex;
   flex-direction: column;
@@ -148,12 +132,11 @@ background-color: var(--light-orange);
 }
 
 @media screen and (min-width: 768px) {
-.modal-review-form {
-  margin-top: 40px;
-  gap: 18px;
+  .modal-review-form {
+    margin-top: 40px;
+    gap: 18px;
+  }
 }
-}
-
 
 .user {
   width: 100%;
@@ -162,11 +145,10 @@ background-color: var(--light-orange);
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 8px;
   background-color: transparent;
-  
-  color: var( --black);
+
+  color: var(--black);
 
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -174,18 +156,16 @@ background-color: var(--light-orange);
     padding: 22px 24px;
     font-size: 18px;
     border-radius: 13px;
-  
-    
   }
-  }
+}
 
- .user:focus {
+.user:focus {
   outline: 1px solid var(--orange);
 }
 
 .user::placeholder {
   font-size: 14px;
-line-height: 1.21;
+  line-height: 1.21;
 
   align-items: center;
   letter-spacing: -0.02em;
@@ -196,15 +176,13 @@ line-height: 1.21;
 @media screen and (min-width: 768px) {
   .user::placeholder {
     font-size: 18px;
-  line-height: 1.22;
-  
+    line-height: 1.22;
   }
-  }
+}
 
 .modal-tel-wrap {
   position: relative;
 }
-
 
 .modal-review-tel-icon {
   position: absolute;
@@ -217,19 +195,16 @@ line-height: 1.21;
   transform: translatey(-50%);
   cursor: text;
   pointer-events: none;
-  
 }
 
 @media screen and (min-width: 768px) {
   .modal-review-tel-icon {
- 
     width: 32px;
     height: 32px;
     top: 50%;
     left: 24px;
-    }
   }
-
+}
 
 .modal-review-tel-code {
   position: absolute;
@@ -249,15 +224,12 @@ line-height: 1.21;
 
 @media screen and (min-width: 768px) {
   .modal-review-tel-code {
-
     left: 74px;
-  
+
     font-size: 18px;
     line-height: 1.22;
-    }
   }
-
-
+}
 
 .modal-review-tel-code::after {
   position: absolute;
@@ -266,29 +238,26 @@ line-height: 1.21;
   margin-left: 8px;
   width: 1.5px;
   height: 100%;
- 
+
   background-color: rgba(17, 17, 17, 0.05);
 }
 
 @media screen and (min-width: 768px) {
   .modal-review-tel-code::after {
-    
     margin-left: 20px;
     width: 3px;
-      }
   }
+}
 
 .user-tel {
   padding-left: 106px;
-  
 }
 
 @media screen and (min-width: 768px) {
   .user-tel {
     padding-left: 177px;
-    
   }
-  }
+}
 
 .user_comment {
   height: 91px;
@@ -298,33 +267,30 @@ line-height: 1.21;
 @media screen and (min-width: 768px) {
   .user_comment {
     height: 137px;
-   
   }
-  }
-
+}
 
 .modal-review-btn {
   padding: 12px 28px;
-  
+
   margin-right: auto;
   min-width: 93px;
 
   outline: none;
 
   transition: background-color 250ms var(--cubic-transition),
-  color 250ms var(--cubic-transition);
+    color 250ms var(--cubic-transition);
 }
 
 @media screen and (min-width: 768px) {
   .modal-review-btn {
     padding: 14px 40px;
-        
-    min-width: 117px;
-  
-  }
-  }
 
-.modal-review-btn:focus{
+    min-width: 117px;
+  }
+}
+
+.modal-review-btn:focus {
   background-color: var(--light-orange);
   color: var(--orange);
 }
