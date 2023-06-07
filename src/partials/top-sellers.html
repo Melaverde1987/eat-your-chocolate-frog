@@ -125,6 +125,7 @@
               pattern="^[a-zA-Z]+$"
               minlength="2"
               placeholder="Name"
+              required
             />
             <input
               class="top-sellers-input"
@@ -133,6 +134,7 @@
               pattern="^[a-zA-Z]+$"
               minlength="2"
               placeholder="Surname"
+              required
             />
           </span>
           <label class="top-modal"></label>
@@ -144,6 +146,7 @@
               name="user-email"
               id="email"
               placeholder="Enter your email"
+              required
             />
           </span>
 
@@ -158,6 +161,7 @@
               id="tel"
               placeholder="Phone number"
               pattern="[0-9]{14,23}"
+              required
             />
             <svg class="top-seller-modal-icon-flag" width="32" height="32">
               <use href="./img/sprite.svg#flag"></use>
@@ -174,6 +178,7 @@
               id="Card-number"
               placeholder="Enter card"
               pattern="[0-9\s]{13,19}"
+              required
             />
             <svg class="top-seller-modal-icon-master" width="31" height="19">
               <use href="./img/sprite.svg#mastercard"></use>
@@ -187,7 +192,7 @@
               placeholder="Enter text"
             ></textarea>
           </label>
-          <button class="top-seller" type="button">Submit</button>
+          <button class="top-seller" type="submit">Submit</button>
         </div>
       </form>
     </div>
